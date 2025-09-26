@@ -1,0 +1,127 @@
+/* Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  /* light rose quartz background */
+  background: #EDBBB4; /* rose quartz */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Optional: soft overlay if using image */
+.auth-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(121, 123, 132, 0.3); /* grey overlay */
+  z-index: 1;
+}
+
+/* Card */
+.auth-card {
+  position: relative;
+  z-index: 2; /* above overlay */
+  background: #fff; /* light card for contrast */
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+  color: #333; /* dark text */
+}
+
+/* Title */
+.auth-card h2 {
+  margin-bottom: 1.5rem;
+  color: #333; 
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Input groups */
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 0rem;
+  border: 1px solid #DBABBE; /* soft pink border */
+  border-radius: 8px;
+  background: #FAF4F6; /* very light input background */
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #797B84; /* grey text */
+  font-size: 1rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: transparent;
+  padding: 0 4px;
+}
+
+/* When input is focused or has value */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 8px;
+  font-size: 0.8rem;
+  color: #797B84;
+  background: #FAF4F6;
+}
+
+/* Buttons */
+.auth-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #DBABBE; /* pink button */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-btn:hover {
+  background: #BAA1A7; /* grey hover for contrast */
+  transform: translateY(-2px);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #797B84; /* grey link */
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
