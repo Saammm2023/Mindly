@@ -7,7 +7,6 @@ function Login({ switchPage }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Username: ${username}\nPassword: ${password}`);
     switchPage("dashboard");
   };
 
@@ -36,7 +35,7 @@ function Login({ switchPage }) {
             />
             <label>Password</label>
           </div>
-          <button type="submit" className="auth-btn" onClick={() => switchPage("dashboard")}>Login</button>
+          <button type="submit" className="auth-btn">Login</button>
         </form>
         <p>
           Don’t have an account?{" "}

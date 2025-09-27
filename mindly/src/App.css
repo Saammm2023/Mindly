@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+/* Layout for sidebar + dashboard */
+.app-layout {
+  display: flex;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Sidebar stays narrow */
+.sidebar {
+  width: 80px;
+  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+/* Dashboard is centered instead of stretched */
+.dashboard-container {
+  flex: 1; /* still takes space for centering */
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  background-color: #f4c2c2;
+  overflow-y: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Optional: dashboard card with fixed width */
+.dashboard-content {
+  width: 70%;   /* adjust as you like */
+  max-width: 900px;
+  padding: 20px;
 }
+
