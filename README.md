@@ -126,14 +126,10 @@ Contributions drive Mindly's evolution. Whether you're fixing bugs, proposing fe
 4. Push to the branch (`git push origin feature/Enhancement`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+=
 ## Acknowledgments
 
-Built with dedication to improving student learning experiences. Special thanks to all contributors who believe in making education more accessible and effective.
-
+Built with dedication to improving student learning experiences. 
 ---
 
 <div align="center">
