@@ -132,10 +132,5 @@ Contributions drive Mindly's evolution. Whether you're fixing bugs, proposing fe
 Built with dedication to improving student learning experiences. 
 ---
 
-<div align="center">
 
-**Made with focus and determination**
 
-[Website](#) • [Twitter](#) • [LinkedIn](#)
-
-</div>
